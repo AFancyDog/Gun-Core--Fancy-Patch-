@@ -1,3 +1,5 @@
+Ignore Licence for now, Treat as do not modify or distribute for now
+
 Gamingbarn's Guns Datapack © 2025 by Gamingbarn
 is licensed under Attribution-NonCommercial-NoDerivs 4.0 International
 https://creativecommons.org/licenses/by-nc-nd/4.0/
