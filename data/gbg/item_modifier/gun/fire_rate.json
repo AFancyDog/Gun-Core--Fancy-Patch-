@@ -1,0 +1,29 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Rate of Fire: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "gbg.fire_rate",
+            "objective": "gbg.temp"
+          },
+          "color": "yellow",
+          "italic": false
+        },
+        {
+          "text": " ticks",
+          "color": "yellow",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append"
+  }
+]

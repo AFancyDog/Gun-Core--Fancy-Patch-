@@ -1,0 +1,24 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Range: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "gbg.range",
+            "objective": "gbg.temp"
+          },
+          "color": "green",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append"
+  }
+]

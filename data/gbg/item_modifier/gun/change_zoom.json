@@ -1,0 +1,14 @@
+[
+  {
+    "function": "minecraft:set_custom_model_data",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "CustomModelData"
+      },
+      "score": "gbg.temp",
+      "scale": 1
+    }
+  }
+]

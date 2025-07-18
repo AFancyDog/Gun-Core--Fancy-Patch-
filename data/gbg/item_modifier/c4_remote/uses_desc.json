@@ -1,0 +1,37 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Uses: ",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "new_c4_remote_use",
+              "objective": "gbg.temp"
+            },
+            "color": "gold",
+            "italic": false
+          },
+          {
+            "text": "/5",
+            "color": "gold",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "replace_all",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {}
+        }
+      ]
+    }
+  ]
+  

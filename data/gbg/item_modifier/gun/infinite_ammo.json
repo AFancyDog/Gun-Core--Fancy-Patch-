@@ -1,0 +1,28 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Ammo: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "∞",
+          "color": "gold",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {}
+      }
+    ]
+  }
+]

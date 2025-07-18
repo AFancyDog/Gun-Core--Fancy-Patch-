@@ -1,0 +1,44 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Ammo: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "gbg.current_ammo",
+            "objective": "gbg.temp"
+          },
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "/",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "gbg.max_ammo",
+            "objective": "gbg.temp"
+          },
+          "color": "gold",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {}
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+Take the most recent version of Gamingbarn's Guns
+Delete the folders:
+/data/config/
+/data/give/
+/data/gbg/recipe/
+/data/gbg/loot_table/
+/data/gbg/function/equipment/
+/data/gbg/function/medical/
+/data/gbg/function/turrets/
+/data/gbg/function/config/
+
+Inside /data/gbg/function/tick.mcfunction:
+- Remove all lines except for the player looping function
+
+Inside /data/gbg/function/player_loop.mcfunction:
+- Remove the lines pertaining to the trigger commands
+- Remove the line for the equipment/medical cooldown display
+
+Inside /data/gbg/function/load.mcfunction:
+- Remove the lines for the equipment and trigger commands
+- Change `scoreboard players set gbg gb.datapack_detect 1` to `scoreboard players add gbg gb.datapack_detect 0`
+
+Inside /data/gbg/function/misc/scoreboard_add.mcfunction
+- Remove the lines giving the recipes for the GBG items
+
+Add the  from the previous verison of Gun Core
+
+Add the  file from the previous verison of Gun Core
+
+Add the following files from the previous verison of Gun Core
+- data/gbg/function/incompatibility_loop.mcfunction
+- data/minecraft/tags/function/load.json
+- how_to_update.txt file
+- pack.mcmeta
+

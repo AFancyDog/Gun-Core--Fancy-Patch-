@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "gbg:stats"
+    },
+    "ops": [
+      {
+        "source": "tag.current_ammo",
+        "target": "gbg_current_ammo",
+        "op": "replace"
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+[
+    {
+      "function": "minecraft:set_damage",
+      "damage": {
+        "type": "minecraft:storage",
+        "storage": "gbg:stats",
+        "path": "tag.new_durability"
+      }
+    }
+  ]
+  

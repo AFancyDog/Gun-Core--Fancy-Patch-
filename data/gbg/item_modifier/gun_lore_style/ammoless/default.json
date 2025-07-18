@@ -1,0 +1,132 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Ammo: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "∞",
+          "color": "gold",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {}
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Damage: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "gbg.damage",
+            "objective": "gbg.temp"
+          },
+          "color": "red",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Range: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "gbg.range",
+            "objective": "gbg.temp"
+          },
+          "color": "green",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Rate of Fire: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "gbg.fire_rate",
+            "objective": "gbg.temp"
+          },
+          "color": "yellow",
+          "italic": false
+        },
+        {
+          "text": " ticks",
+          "color": "yellow",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Recoil Strength: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "gbg.recoil_strength",
+            "objective": "gbg.temp"
+          },
+          "color": "#bf46ff",
+          "italic": false
+        },
+        {
+          "text": "/14",
+          "color": "#bf46ff",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append"
+  }
+]
