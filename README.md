@@ -8,5 +8,5 @@
 
 # Fancy Patch Additions
 
-# - Allowing Multiple ammo items for one gun (In Progress)
-# - Making it so ammo can modify the guns stats when loaded (In Progress)
+### - Allowing Multiple ammo items for one gun (In Progress)
+### - Making it so ammo can modify the guns stats when loaded (In Progress)
