@@ -19,7 +19,10 @@ scoreboard objectives add gbg.is_using dummy
 scoreboard objectives add gbg.using_time dummy
 scoreboard objectives add gbg.has_respawned minecraft.custom:minecraft.time_since_death
 scoreboard objectives add gbg.shot_cycle dummy
-
+#Fancy Patch
+scoreboard objectives add fp.multi_ammo_index dummy
+scoreboard objectives add fp.multi_ammo_length dummy
+scoreboard objectives add fp.multi_ammo_tag_found dummy
 # Slowcast
 scoreboard objectives add gbg.slowcast.damage dummy
 scoreboard objectives add gbg.slowcast.max_range dummy

@@ -3,7 +3,7 @@ execute if entity @s[gamemode=creative] run return 0
 # Letting player reload gun if reload type is Air
 execute if score gun_reload_type gbg.temp matches 7 run return 0
 # multi-ammo detection
-execute if score gun_reload_type gbg.temp matches 8 run return run function gbg:reload/multi-ammo
+execute if score gun_reload_type gbg.temp matches 8 run return run function gbg:reload/multi-ammo-loadcomp
 # If the player has the right ammo item
 $execute if items entity @s container.* minecraft:$(ammo_base)[minecraft:custom_data={$(ammo_tag):1b}] run return 0
 $execute if items entity @s weapon.* minecraft:$(ammo_base)[minecraft:custom_data={$(ammo_tag):1b}] run return 0

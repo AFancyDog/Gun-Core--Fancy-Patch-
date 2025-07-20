@@ -1,4 +1,4 @@
-## GC V1.0.4
+## GC FP V1.0.4
 
 ### Patched Version
 
