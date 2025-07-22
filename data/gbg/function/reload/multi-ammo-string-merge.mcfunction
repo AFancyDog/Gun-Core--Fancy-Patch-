@@ -1,0 +1,1 @@
+$data modify storage fp.multi_ammo_cycle ammunition_lore set value "$(ammunition_lore)$(separator)$(string_two)"

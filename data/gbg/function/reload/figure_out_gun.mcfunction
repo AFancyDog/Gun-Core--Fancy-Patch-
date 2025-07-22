@@ -68,10 +68,20 @@ execute store result storage gbg:stats tag.new_durability float 0.01 run scorebo
 execute store result score gbg.damage_type gbg.temp run data get entity @s SelectedItem.components.minecraft:custom_data.gbg.damage_type
 execute if score gbg.damage_type gbg.temp matches 8..9 run scoreboard players operation gbg.damage gbg.temp *= 14 number
 execute if score gbg.damage_type gbg.temp matches 8..9 run scoreboard players add gbg.damage gbg.temp 1
+#multi ammo ammunition lore
+scoreboard players set @s fp.multi_ammo_lore 0
+execute store result storage fp.multi_ammo_cycle multi_ammo_lore_cycle int 1 run scoreboard players get @s fp.multi_ammo_lore
+data modify storage fp.multi_ammo_cycle ammunition_lore set value ""
+say starting lore check
+data modify storage fp.multi_ammo_cycle string_two set value ""
+data modify storage fp.multi_ammo_cycle separator set value ""
+function gbg:reload/multi-ammo-lore with storage fp.multi_ammo_cycle
 #building lore
-execute if score @s player_config.gbg.desc_style matches 0 run item modify entity @s weapon.mainhand gbg:gun_lore_style/reg/default
-execute if score @s player_config.gbg.desc_style matches 1 run item modify entity @s weapon.mainhand gbg:gun_lore_style/reg/fairy
-execute if score @s player_config.gbg.desc_style matches 2 run item modify entity @s weapon.mainhand gbg:gun_lore_style/reg/fire
-execute if score @s player_config.gbg.desc_style matches 3 run item modify entity @s weapon.mainhand gbg:gun_lore_style/reg/kelp
-
-
+execute unless score gun_reload_type gbg.temp matches 8 if score @s player_config.gbg.desc_style matches 0 run item modify entity @s weapon.mainhand gbg:gun_lore_style/reg/default
+execute unless score gun_reload_type gbg.temp matches 8 if score @s player_config.gbg.desc_style matches 1 run item modify entity @s weapon.mainhand gbg:gun_lore_style/reg/fairy
+execute unless score gun_reload_type gbg.temp matches 8 if score @s player_config.gbg.desc_style matches 2 run item modify entity @s weapon.mainhand gbg:gun_lore_style/reg/fire
+execute unless score gun_reload_type gbg.temp matches 8 if score @s player_config.gbg.desc_style matches 3 run item modify entity @s weapon.mainhand gbg:gun_lore_style/reg/kelp
+execute if score gun_reload_type gbg.temp matches 8 if score @s player_config.gbg.desc_style matches 0 run item modify entity @s weapon.mainhand gbg:gun_lore_style/multi/default
+execute if score gun_reload_type gbg.temp matches 8 if score @s player_config.gbg.desc_style matches 1 run item modify entity @s weapon.mainhand gbg:gun_lore_style/multi/fairy
+execute if score gun_reload_type gbg.temp matches 8 if score @s player_config.gbg.desc_style matches 2 run item modify entity @s weapon.mainhand gbg:gun_lore_style/multi/fire
+execute if score gun_reload_type gbg.temp matches 8 if score @s player_config.gbg.desc_style matches 3 run item modify entity @s weapon.mainhand gbg:gun_lore_style/multi/kelp

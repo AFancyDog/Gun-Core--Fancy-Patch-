@@ -23,6 +23,7 @@ scoreboard objectives add gbg.shot_cycle dummy
 scoreboard objectives add fp.multi_ammo_index dummy
 scoreboard objectives add fp.multi_ammo_length dummy
 scoreboard objectives add fp.multi_ammo_tag_found dummy
+scoreboard objectives add fp.multi_ammo_lore dummy
 # Slowcast
 scoreboard objectives add gbg.slowcast.damage dummy
 scoreboard objectives add gbg.slowcast.max_range dummy
