@@ -1,0 +1,9 @@
+{
+    "function": "minecraft:set_custom_data",
+    "tag": {
+        "gbg": {
+            "recoil_strength": 0
+        }
+    },
+    "conditions": []
+}

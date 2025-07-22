@@ -1,0 +1,9 @@
+{
+    "function": "minecraft:set_custom_data",
+    "tag": {
+        "gbg": {
+            "zoom_strength": 0
+        }
+    },
+    "conditions": []
+}

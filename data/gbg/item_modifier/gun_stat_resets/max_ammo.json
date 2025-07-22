@@ -1,0 +1,9 @@
+{
+  "function": "minecraft:set_custom_data",
+  "tag": {
+    "gbg": {
+      "max_ammo": 0
+    }
+  },
+  "conditions": []
+}

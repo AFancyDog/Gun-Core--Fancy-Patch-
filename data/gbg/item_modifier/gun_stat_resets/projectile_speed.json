@@ -1,0 +1,9 @@
+{
+    "function": "minecraft:set_custom_data",
+    "tag": {
+        "gbg": {
+            "projectile_speed": 0
+        }
+    },
+    "conditions": []
+}

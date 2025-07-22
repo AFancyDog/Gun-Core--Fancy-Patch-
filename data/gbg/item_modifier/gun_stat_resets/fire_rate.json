@@ -1,0 +1,9 @@
+{
+    "function": "minecraft:set_custom_data",
+    "tag": {
+        "gbg": {
+            "fire_rate": 0
+        }
+    },
+    "conditions": []
+}

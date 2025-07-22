@@ -13,6 +13,7 @@ execute if score gbg.max_ammo gbg.temp matches 0 run return fail
 data modify storage gbg:ammo ammo_base set from entity @s SelectedItem.components.minecraft:custom_data.gbg.ammo_base
 data modify storage gbg:ammo ammo_tag set from entity @s SelectedItem.components.minecraft:custom_data.gbg.ammo_item_tag
 execute store result score has_ammo gbg.temp run function gbg:reload/has_ammo with storage gbg:ammo
+
 execute if score has_ammo gbg.temp matches 1 run function gbg:reload/out_of_ammo
 execute if score has_ammo gbg.temp matches 1 run scoreboard players set @s gbg.cooldown 10
 execute if score has_ammo gbg.temp matches 1 run return fail
@@ -37,6 +38,7 @@ execute if score gun_reload_type gbg.temp matches 6 run function gbg:reload/bull
 #air
 execute if score gun_reload_type gbg.temp matches 7 run scoreboard players operation gbg.current_ammo gbg.temp = gbg.max_ammo gbg.temp
 #multi-ammo (fancy patch)
+execute store result score gbg.max_ammo gbg.temp run data get entity @s SelectedItem.components.minecraft:custom_data.gbg.max_ammo
 execute if score gun_reload_type gbg.temp matches 8 run scoreboard players operation gbg.current_ammo gbg.temp = gbg.max_ammo gbg.temp
 
 ## Setting Cooldown and Reload Timer
