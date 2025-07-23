@@ -141,25 +141,27 @@
       "mode": "append"
     },
     {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "text": "Ammunition: ",
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "nbt": "SelectedItem.components.minecraft:custom_data.gbg.ammo_item_tag",
-            "entity": "@s",
-            "color": "#32B17F",
-            "italic": false
-          }
-        ]
-      ],
-      "mode": "append"
-    },
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "Ammunition: ",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "nbt": "ammunition_lore",
+        "storage": "minecraft:fp.multi_ammo_cycle",
+        "source": "storage",
+        "type": "nbt",
+        "color": "#32B17F",
+        "italic": false
+      }
+    ]
+  ],
+  "mode": "append"
+},
     {
       "function": "minecraft:set_lore",
       "entity": "this",
