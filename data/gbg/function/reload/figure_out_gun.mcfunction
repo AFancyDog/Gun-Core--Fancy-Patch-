@@ -72,7 +72,6 @@ execute if score gbg.damage_type gbg.temp matches 8..9 run scoreboard players ad
 scoreboard players set @s fp.multi_ammo_lore 0
 execute store result storage fp.multi_ammo_cycle multi_ammo_lore_cycle int 1 run scoreboard players get @s fp.multi_ammo_lore
 data modify storage fp.multi_ammo_cycle ammunition_lore set value ""
-say starting lore check
 data modify storage fp.multi_ammo_cycle string_two set value ""
 data modify storage fp.multi_ammo_cycle separator set value ""
 function gbg:reload/multi-ammo-lore with storage fp.multi_ammo_cycle
